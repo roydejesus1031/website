@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://storage.googleapis.com/roy-dejesus-website-test'
 languageCode = 'en-us'
 title = 'Roy De Jesus | Infrastructure Engineer'
 theme = 'risotto'
