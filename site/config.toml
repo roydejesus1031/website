@@ -1,4 +1,4 @@
-baseURL = 'https://storage.googleapis.com/roy-dejesus-website-test'
+baseURL = 'https://storage.googleapis.com/roy-dejesus-website-test/index.html'
 languageCode = 'en-us'
 title = 'Roy De Jesus | Infrastructure Engineer'
 theme = 'risotto'
