@@ -8,7 +8,7 @@ on:
 env:
   SITE_SOURCE: ./site
   HUGO_IMAGE: debian-ci
-  HUGO_CMD: '--minify'
+  HUGO_CMD: 'hugo --minify'
   STORAGE_BUCKET: 'roy-dejesus-website-test'
   GCP_WORKLOAD_ID_PROV: 'projects/228867922771/locations/global/workloadIdentityPools/github-actions/providers/github-provider'
   GCP_SVC_ACC: 'personal-website-deploy@website-test-353100.iam.gserviceaccount.com'
