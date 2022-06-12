@@ -51,6 +51,7 @@ on:
 
 env:
   PROJECT_ID: website-test-353100 # TODO: update Google Cloud project id
+  SITE_SOURCE: ./site
 
 jobs:
   deploy:
@@ -66,3 +67,6 @@ jobs:
 
       - name: Build
         uses: klakegg/actions-hugo@1.0.0
+        with:
+          source: ${{ env.SITE_SOURCE }}
+
