@@ -7,7 +7,6 @@ on:
 
 env:
   SITE_SOURCE: ./site
-  HUGO_IMAGE: debian-ci
   HUGO_CMD: 'hugo --minify'
   STORAGE_BUCKET: 'roy-dejesus-website-test'
   GCP_WORKLOAD_ID_PROV: 'projects/228867922771/locations/global/workloadIdentityPools/github-actions/providers/github-provider'
@@ -24,12 +23,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - name: Build Hugo site
         uses: klakegg/actions-hugo@1.0.0
         with:
           source: ${{ env.SITE_SOURCE }}
-          image: ${{ env.HUGO_IMAGE }}
           command: ${{ env.HUGO_CMD }}
           
       - name: Auth to Google Cloud Storage
