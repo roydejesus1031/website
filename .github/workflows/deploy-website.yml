@@ -7,6 +7,8 @@ on:
 
 env:
   SITE_SOURCE: ./site
+  HUGO_IMAGE: debian-ci
+  HUGO_CMD: '--minify'
   STORAGE_BUCKET: 'roy-dejesus-website-test'
   GCP_WORKLOAD_ID_PROV: 'projects/228867922771/locations/global/workloadIdentityPools/github-actions/providers/github-provider'
   GCP_SVC_ACC: 'personal-website-deploy@website-test-353100.iam.gserviceaccount.com'
@@ -27,6 +29,8 @@ jobs:
         uses: klakegg/actions-hugo@1.0.0
         with:
           source: ${{ env.SITE_SOURCE }}
+          image: ${{ env.HUGO_IMAGE }}
+          command: ${{ env.HUGO_CMD }}
           
       - name: Auth to Google Cloud Storage
         uses: 'google-github-actions/auth@v0'
