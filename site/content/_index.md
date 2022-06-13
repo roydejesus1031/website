@@ -1,6 +1,5 @@
 ---
 title: ""
-draft: false
 ---
 
 # Welcome
