@@ -10,7 +10,7 @@ on:
 env:
   SITE_SOURCE: ./site
   HUGO_CMD: ' --minify'
-  STORAGE_BUCKET: 'roy-dejesus-website-staging'
+  STORAGE_BUCKET: 'roy-dejesus-website'
 
 jobs:
   deploy:

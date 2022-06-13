@@ -1,4 +1,4 @@
-baseURL = 'https://staging.roydejesus.com'
+baseURL = 'https://roydejesus.com'
 languageCode = 'en-us'
 title = 'Roy De Jesus'
 theme = 'risotto'
