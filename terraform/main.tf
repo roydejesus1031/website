@@ -39,6 +39,7 @@ resource "google_project_iam_member" "tf_deployer" {
     "roles/iam.serviceAccountAdmin",
     "roles/compute.loadBalancerAdmin",
     "roles/iam.workloadIdentityPoolAdmin",
+    "roles/resourcemanager.projectIamAdmin"
   ])
   project = var.project_id
   role    = each.key
