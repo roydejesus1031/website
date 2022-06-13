@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "roy-dejesus-website-staging-tfstate"
-    prefix  = "terraform/state"
+    bucket = "roy-dejesus-website-staging-tfstate"
+    prefix = "terraform/state"
   }
 }

@@ -76,8 +76,8 @@ resource "google_project_iam_member" "site_deployer" {
   member  = "serviceAccount:${google_service_account.site_deployer.email}"
 
   condition {
-    title = "Website Access Only"
-    expression  = "resource.name.startsWith(\"projects/_/buckets/${google_storage_bucket.website.name}\")"
+    title      = "Website Access Only"
+    expression = "resource.name.startsWith(\"projects/_/buckets/${google_storage_bucket.website.name}\")"
   }
 }
 
