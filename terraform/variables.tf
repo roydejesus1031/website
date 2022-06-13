@@ -18,6 +18,11 @@ variable "website_url" {
   default = "roydejesus.com"
 }
 
+variable "email" {
+  type    = string
+  default = "roydejesus1031@gmail.com"
+}
+
 variable "region" {
   type    = string
   default = "us-central1"
