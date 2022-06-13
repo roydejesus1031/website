@@ -1,6 +1,6 @@
-baseURL = 'http://34.110.240.154'
+baseURL = 'http://34.111.140.37'
 languageCode = 'en-us'
-title = 'Roy De Jesus | Infrastructure Engineer'
+title = 'Roy De Jesus'
 theme = 'risotto'
 
 sectionPagesMenu = "main"
