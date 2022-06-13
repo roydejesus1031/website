@@ -14,7 +14,7 @@ mode = "dark-mode"
 # Sidebar: about/bio
 [params.about]
 title = "Roy De Jesus"
-description = "DevOps Engineer  Build/Release Engineer  Software Developer"
+description = "DevOps Engineer | Build/Release Engineer | Software Developer"
 logo = "images/rice.svg"
 
 [[params.socialLinks]]
