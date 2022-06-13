@@ -1,6 +1,6 @@
 variable "project_id" {
   type    = string
-  default = "website-staging-9993433"
+  default = "website-353206"
 }
 
 variable "github_repo" {
@@ -10,12 +10,12 @@ variable "github_repo" {
 
 variable "state_bucket_name" {
   type    = string
-  default = "roy-dejesus-website-staging-tfstate"
+  default = "roy-dejesus-website-prod-tfstate"
 }
 
 variable "website_url" {
   type    = string
-  default = "staging.roydejesus.com"
+  default = "roydejesus.com"
 }
 
 variable "region" {

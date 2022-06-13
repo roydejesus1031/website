@@ -52,7 +52,7 @@ module "gh_tf_oidc" {
 }
 
 resource "google_storage_bucket" "website" {
-  name                        = "roy-dejesus-website-staging"
+  name                        = "roy-dejesus-website"
   location                    = "US"
   force_destroy               = true
   uniform_bucket_level_access = true
@@ -102,7 +102,7 @@ resource "google_storage_bucket_iam_binding" "public" {
 }
 
 resource "google_storage_bucket" "tf_state" {
-  name          = "roy-dejesus-website-staging-tfstate"
+  name          = var.state_bucket_name
   force_destroy = false
   location      = "US"
   storage_class = "STANDARD"
