@@ -13,6 +13,11 @@ variable "state_bucket_name" {
   default = "roy-dejesus-website-staging-tfstate"
 }
 
+variable "website_url" {
+  type    = string
+  default = "staging.roydejesus.com"
+}
+
 variable "region" {
   type    = string
   default = "us-central1"
