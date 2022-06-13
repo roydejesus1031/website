@@ -6,15 +6,7 @@ provider "google" {
   user_project_override = true
 }
 
-data "google_billing_account" "acct" {
-  display_name = var.billing_acct
-  open         = true
-}
-
-resource "google_project" "project" {
-  name            = var.project_name
-  project_id      = var.project_id
-  billing_account = data.google_billing_account.acct.id
+data "google_project" "project" {
 }
 
 resource "google_project_service" "services" {
@@ -24,8 +16,6 @@ resource "google_project_service" "services" {
   service                    = each.key
   disable_dependent_services = false
   disable_on_destroy         = false
-
-  depends_on = [google_project.project]
 }
 
 resource "google_service_account" "tf_deployer" {

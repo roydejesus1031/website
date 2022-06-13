@@ -8,11 +8,6 @@ variable "project_name" {
   default = "Website Staging"
 }
 
-variable "billing_acct" {
-  type    = string
-  default = "My Billing Account"
-}
-
 variable "github_repo" {
   type    = string
   default = "roydejesus1031/website"
