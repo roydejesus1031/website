@@ -1,4 +1,4 @@
-name: Deploy GCP Infrastructure
+name: Deploy Infrastructure
 
 on:
   push:
