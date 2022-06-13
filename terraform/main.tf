@@ -34,8 +34,14 @@ resource "google_service_account" "tf_deployer" {
 }
 
 resource "google_project_iam_member" "tf_deployer" {
+  for_each = toset([
+    "roles/storage.admin",
+    "roles/iam.serviceAccountAdmin",
+    "roles/compute.loadBalancerAdmin",
+    "roles/iam.workloadIdentityPoolAdmin",
+  ])
   project = var.project_id
-  role    = "roles/storage.admin"
+  role    = each.key
   member  = "serviceAccount:${google_service_account.tf_deployer.email}"
 }
 
