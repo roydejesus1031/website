@@ -3,11 +3,6 @@ variable "project_id" {
   default = "website-staging-9993433"
 }
 
-variable "project_name" {
-  type    = string
-  default = "Website Staging"
-}
-
 variable "github_repo" {
   type    = string
   default = "roydejesus1031/website"
