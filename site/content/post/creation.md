@@ -6,7 +6,7 @@ author: "Roy De Jesus"
 
 I will go over the build and deployment of this simple site, highlighting the decisions I took, why, and what I learned in the process.
 
-My goals were to minimize costs while making an automated, secure, and easy to understand CI/CD process that would be easy to scale or make more complex systems with than a static site. I also wanted to learn some tools I was unfamiliar with, such as Terraform and Github Actions.
+My goals were to minimize costs while making an automated, secure, and easy to understand CI/CD process that would be easy to scale or make more complex systems with. I also wanted to learn some tools I was unfamiliar with, such as Terraform and Github Actions.
 
 # Site
 The html and css of this site was made using [Hugo](https://github.com/gohugoio/hugo), a static site generator. As I am not a web designer, I didn't want to spend too much time on the layout and just chose a theme that looked nice. The CI/CD process for the site can be seen [here](https://github.com/roydejesus1031/website/blob/main/.github/workflows/deploy-website.yml) and looks like this:
