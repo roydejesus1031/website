@@ -2,6 +2,9 @@ baseURL = 'https://roydejesus.com'
 languageCode = 'en-us'
 title = 'Roy De Jesus'
 theme = 'risotto'
+paginate = 3
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
 
 sectionPagesMenu = "main"
 
