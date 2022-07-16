@@ -70,7 +70,7 @@ Overall, the entire system is very low cost. While the domain has to be renewed 
 
 The system can easily be extended without changing much of the CI/CD pipeline. I could make a complex web application, have Terraform provision a cluster in GKE, and then have the site deployment apply or install a helm chart. Tests could be added to the Github Action for deployment and reject failing commits.
 
-The website might be simple, but I still ended up learning a lot using Terraform and Github Actions to automate its deployment and infrastructure.
+The website might be simple, but I still ended up learning a lot about Terraform and Github Actions.
 
 {{< css.inline >}}
 <style>
