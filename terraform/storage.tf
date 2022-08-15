@@ -18,7 +18,7 @@ resource "google_storage_bucket" "tf_state" {
 }
 
 resource "google_storage_bucket" "website" {
-  name                        = var.website_bucket_name
+  name                        = var.website_url
   location                    = "US"
   force_destroy               = true
   uniform_bucket_level_access = true
