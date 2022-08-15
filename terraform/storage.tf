@@ -18,7 +18,7 @@ resource "google_storage_bucket" "tf_state" {
 }
 
 resource "google_storage_bucket" "website" {
-  name                        = "roy-dejesus-website"
+  name                        = var.website_bucket_name
   location                    = "US"
   force_destroy               = true
   uniform_bucket_level_access = true

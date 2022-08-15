@@ -16,6 +16,12 @@ variable "state_bucket_name" {
   description = "Remote GCP storage bucket for state"
 }
 
+variable "website_bucket_name" {
+  type        = string
+  default     = "www.roydejesus.com"
+  description = "GCP storage bucket for website"
+}
+
 variable "website_url" {
   type        = string
   default     = "roydejesus.com"
