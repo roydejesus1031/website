@@ -3,7 +3,7 @@ title: ""
 ---
 
 # Welcome
-I am an Infrastructure Engineer specializing in fields such as DevOps, Automation, and Build & Release Engineering. I am also an AWS Certified Associate Solutions Architect.
+I am a DevOps Engineer at Coconut Software specializing in Automation, Build & Release Engineering, and DevOps practices. I am also an AWS Certified Associate Solutions Architect.
 
 My experience and technologies used include: Python, Kubernetes, Gitlab CI/CD, Amazon Web Services(AWS), Google Cloud Platform(GCP), Docker, Git, Linux(Ubuntu), Prometheus, and Grafana.
 
